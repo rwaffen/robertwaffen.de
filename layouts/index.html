@@ -1,0 +1,29 @@
+{{ define "body" }}
+
+{{ end }}
+
+{{ define "main" }}
+<main aria-role="main">
+  <div>
+      {{ if .Site.Params.Portrait.Path }}
+         <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+      {{ end }}
+  </div>
+</main>
+    <div align="left">
+      <h2>RobertWaffen.de - Eine Sache mit System!</h2>
+      Es fehlt Ihnen an System in ihrer Organisation? <br \>
+      <br \>
+      Systemadministrator? <br \>
+      Systembetreuer? <br \>
+      Systemarchitekt? <br \>
+      Systemautomatisierung? <br \>
+      Systempflege? <br \>
+      Systemmonitoring? <br \>
+      Systemplanung? <br \>
+      ... <br \>
+      <br \>
+      Eine Sache mit System: Robert Waffen, Agile Enterprise DevOps! <br \>
+      Werfen Sie doch einen Blick in mein Profil oder schauen sich meine Referenzen an!
+    </div>
+{{ end }}

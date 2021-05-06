@@ -1,0 +1,40 @@
+baseURL = "https://www.robertwaffen.de/"
+languageCode = "en-us"
+title = "Robert Waffen"
+theme = "hello-friend-ng"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  customCSS = ["/css/custom.css"]
+
+[params.portrait]
+  path = "/robert.jpg"
+  maxWidth = "250px"
+
+[params.logo]
+  logoMark     = ">"
+  logoText     = "cd /system/rwaffen"
+  logoHomeLink = "/"
+  logoCursorDisabled = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Zur Person"
+    pre = "zur person"
+    url = "/zur-person/"
+    weight = 2
+  [[menu.main]]
+    name = "Projekte"
+    pre = "projekte"
+    url = "/projekte/"
+    weight = 3
+  [[menu.main]]
+    name = "Impressum"
+    pre = "impressum"
+    url = "/impressum/"
+    weight = 4
